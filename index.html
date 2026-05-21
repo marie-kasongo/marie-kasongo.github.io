@@ -2,111 +2,432 @@
 <html>
 
 <head>
-  <title>Marie Kasongo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Marie Kasongo Portfolio</title>
 
   <style>
-    body {
-      font-family: Arial;
-      background: #fff5f8;
-      color: #333;
-      margin: 0;
-      padding: 0;
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
     }
 
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 80px;
-      gap: 50px;
+    body{
+      font-family:Arial, sans-serif;
+      background:linear-gradient(to bottom,#fff7fa,#ffffff);
+      color:#333;
     }
 
-    h1 {
-      color: #ec4899;
-      font-size: 70px;
-      margin-bottom: 10px;
+    nav{
+      position:sticky;
+      top:0;
+      background:white;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border-bottom:1px solid #ffd9e8;
+      z-index:100;
     }
 
-    h2 {
-      font-size: 32px;
+    nav h1{
+      color:#ec4899;
+      font-size:28px;
     }
 
-    p {
-      font-size: 20px;
-      line-height: 1.6;
+    nav ul{
+      display:flex;
+      gap:25px;
+      list-style:none;
     }
 
-    img {
-      width: 350px;
-      border-radius: 30px;
+    nav a{
+      text-decoration:none;
+      color:#ec4899;
+      font-weight:bold;
     }
 
-    details {
-      background: white;
-      margin: 20px 80px;
-      padding: 20px;
-      border-radius: 20px;
-      border: 1px solid #ffd6e5;
+    /* HERO */
+
+    .hero{
+      min-height:100vh;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      align-items:center;
+      gap:60px;
+      padding:0 8%;
     }
 
-    summary {
-      font-size: 30px;
-      color: #ec4899;
-      font-weight: bold;
-      cursor: pointer;
+    .hero-text h2{
+      font-size:35px;
+      margin-bottom:15px;
     }
+
+    .hero-text h1{
+      font-size:85px;
+      color:#ec4899;
+      line-height:1;
+      margin-bottom:25px;
+    }
+
+    .hero-text p{
+      font-size:22px;
+      line-height:1.7;
+      color:#666;
+      margin-bottom:35px;
+      max-width:600px;
+    }
+
+    .hero-buttons{
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:16px 28px;
+      border:none;
+      border-radius:18px;
+      font-size:18px;
+      cursor:pointer;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    .pink-btn{
+      background:#ec4899;
+      color:white;
+      box-shadow:0 10px 20px rgba(236,72,153,0.2);
+    }
+
+    .pink-btn:hover{
+      background:#db2777;
+    }
+
+    .outline-btn{
+      background:white;
+      color:#ec4899;
+      border:2px solid #f9a8d4;
+    }
+
+    .outline-btn:hover{
+      border-color:#ec4899;
+    }
+
+    .hero img{
+      width:100%;
+      max-width:430px;
+      border-radius:35px;
+      box-shadow:0 20px 40px rgba(236,72,153,0.2);
+    }
+
+    /* SECTIONS */
+
+    .sections{
+      width:85%;
+      margin:auto;
+      padding-bottom:100px;
+    }
+
+    details{
+      background:white;
+      border-radius:28px;
+      margin-bottom:30px;
+      border:1px solid #ffe4ef;
+      overflow:hidden;
+      box-shadow:0 5px 20px rgba(0,0,0,0.03);
+    }
+
+    summary{
+      padding:30px;
+      font-size:34px;
+      font-weight:bold;
+      color:#ec4899;
+      cursor:pointer;
+      list-style:none;
+    }
+
+    .content{
+      padding:0 35px 35px;
+    }
+
+    .content p{
+      font-size:20px;
+      line-height:1.8;
+      color:#666;
+      margin-bottom:25px;
+    }
+
+    /* CARDS */
+
+    .cards{
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr;
+      gap:20px;
+    }
+
+    .card{
+      background:#fff0f6;
+      border-radius:22px;
+      padding:25px;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card h3{
+      color:#ec4899;
+      margin-bottom:15px;
+      font-size:24px;
+    }
+
+    .card p{
+      font-size:17px;
+      margin-bottom:0;
+    }
+
+    footer{
+      text-align:center;
+      padding:40px;
+      border-top:1px solid #ffd9e8;
+      color:#777;
+    }
+
+    @media(max-width:900px){
+
+      .hero{
+        grid-template-columns:1fr;
+        text-align:center;
+        padding-top:80px;
+      }
+
+      .hero-text h1{
+        font-size:60px;
+      }
+
+      .hero-buttons{
+        justify-content:center;
+      }
+
+      .hero img{
+        margin:auto;
+      }
+
+      .cards{
+        grid-template-columns:1fr;
+      }
+
+      nav ul{
+        display:none;
+      }
+
+    }
+
   </style>
 </head>
 
 <body>
 
+  <!-- NAVBAR -->
+
+  <nav>
+
+    <h1>Marie Kasongo ✨</h1>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- HERO -->
+
   <section class="hero">
 
-    <div>
+    <div class="hero-text">
+
       <h2>Hi, I'm</h2>
 
-      <h1>Marie</h1>
+      <h1>Marie Kasongo</h1>
 
       <p>
-        Aspiring Biomedical Engineer passionate about biomedical imaging, healthcare innovation, and computational biology.
+        An aspiring Biomedical Engineer passionate about biomedical imaging, healthcare innovation, computational biology, and translational medicine.
       </p>
+
+      <div class="hero-buttons">
+
+        <button class="btn pink-btn">
+          View My Work ↓
+        </button>
+
+        <button class="btn outline-btn">
+          Resume
+        </button>
+
+      </div>
+
     </div>
 
-    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop">
+    <div>
+      <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop">
+    </div>
 
   </section>
 
-  <details>
-    <summary>💗 About Me</summary>
+  <!-- DROPDOWN SECTIONS -->
 
-    <p>
-      Biomedical Engineering student at Brown University interested in AI in healthcare and translational medicine.
-    </p>
-  </details>
+  <section class="sections">
 
-  <details>
-    <summary>🧪 Research Experience</summary>
+    <!-- ABOUT -->
 
-    <p>
-      Wong Biomedical Imaging Lab research involving CellProfiler and Cellpose workflows.
-    </p>
-  </details>
+    <details id="about">
 
-  <details>
-    <summary>💻 Featured Projects</summary>
+      <summary>💗 About Me</summary>
 
-    <p>
-      CTC Morphology Analysis + MATLAB simulations.
-    </p>
-  </details>
+      <div class="content">
 
-  <details>
-    <summary>✨ Technical Skills</summary>
+        <p>
+          I am a Biomedical Engineering student at Brown University interested in biomedical imaging, AI in healthcare, cancer research, and computational biology. I enjoy combining engineering, research, and scientific problem solving to explore innovative healthcare solutions.
+        </p>
 
-    <p>
-      Python • MATLAB • CellProfiler • Data Visualization
-    </p>
-  </details>
+      </div>
+
+    </details>
+
+    <!-- RESEARCH -->
+
+    <details id="research">
+
+      <summary>🧪 Research Experience</summary>
+
+      <div class="content">
+
+        <p>
+          My research experience focuses on biomedical imaging, computational analysis, and cancer biology. I have worked on projects involving cell morphology analysis, microscopy workflows, and scientific data interpretation.
+        </p>
+
+        <div class="cards">
+
+          <div class="card">
+
+            <h3>Wong Lab</h3>
+
+            <p>
+              Circulating tumor cell morphology analysis using CellProfiler and Cellpose.
+            </p>
+
+          </div>
+
+          <div class="card">
+
+            <h3>Biomedical Imaging</h3>
+
+            <p>
+              Microscopy analysis and fluorescence imaging workflows.
+            </p>
+
+          </div>
+
+          <div class="card">
+
+            <h3>Computational Research</h3>
+
+            <p>
+              PCA analysis, quantitative image analysis, and data visualization.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </details>
+
+    <!-- PROJECTS -->
+
+    <details id="projects">
+
+      <summary>💻 Featured Projects</summary>
+
+      <div class="content">
+
+        <p>
+          A collection of engineering, research, and computational projects combining biomedical science with technical problem solving.
+        </p>
+
+        <div class="cards">
+
+          <div class="card">
+
+            <h3>CTC Morphology</h3>
+
+            <p>
+              Investigating how extracellular matrix stiffness affects tumor cell morphology.
+            </p>
+
+          </div>
+
+          <div class="card">
+
+            <h3>MATLAB Simulation</h3>
+
+            <p>
+              Projectile motion and ODE-based engineering simulation project.
+            </p>
+
+          </div>
+
+          <div class="card">
+
+            <h3>Image Analysis</h3>
+
+            <p>
+              Computational imaging workflows using CellProfiler and Cellpose.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </details>
+
+    <!-- CONTACT -->
+
+    <details id="contact">
+
+      <summary>💌 Contact Me</summary>
+
+      <div class="content">
+
+        <p>
+          Email: your-email@gmail.com
+          <br><br>
+          LinkedIn: your-linkedin
+          <br><br>
+          GitHub: marie-kasongo
+        </p>
+
+      </div>
+
+    </details>
+
+  </section>
+
+  <footer>
+    © 2026 Marie Kasongo • Built with 💗 and GitHub Pages
+  </footer>
 
 </body>
 
