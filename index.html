@@ -474,6 +474,9 @@
 
         </a>
 
+       <!-- MODEL Circulating Tumor Cell Imaging -->
+       <div class="card-link" onclick="openCTCModal()">
+
         <!-- Molecular Engineering -->
 
         <a href="molecularengineering.html" class="card-link">
@@ -749,24 +752,28 @@
     </p>
   </footer>
   <script>
- 
- function openModal(){
-   document.getElementById("axoModal").style.display = "block";
- }
- 
- function closeModal(){
-   document.getElementById("axoModal").style.display = "none";
- }
- 
- window.onclick = function(event){
- 
-   const modal = document.getElementById("axoModal");
- 
-   if(event.target == modal){
-     modal.style.display = "none";
-   }
- }
- 
+   
+function openModal(modalId){
+  document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal(modalId){
+  document.getElementById(modalId).style.display = "none";
+}
+
+window.onclick = function(event){
+
+  const modals = document.querySelectorAll(".modal");
+
+  modals.forEach(function(modal){
+
+    if(event.target == modal){
+      modal.style.display = "none";
+    }
+
+  });
+
+}
  </script>
 
 </body>
