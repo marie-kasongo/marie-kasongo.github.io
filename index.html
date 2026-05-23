@@ -304,6 +304,34 @@
     color:#16325B;
     margin-bottom:10px;
    }
+
+   /* ANAYLISIS TABLE*/
+   .analysis-table{
+       width:100%;
+       border-collapse:collapse;   
+       margin-top:30px;
+       font-size:16px;
+       color:#403A37;
+      }
+      
+      .analysis-table th{
+       background:#EEF2F7; 
+       color:#16325B;
+       padding:18px;
+       text-align:left;
+       font-weight:700;
+      }
+      
+      .analysis-table td{
+       padding:18px;
+       border-bottom:1px solid #E8DED7;
+       vertical-align:top;
+       line-height:1.7;
+      }
+      
+      .analysis-table tr:hover{
+       background:#FAF7F4;
+      }
    
     /* MOBILE */
 
@@ -511,30 +539,28 @@
 
     <ul class="popup-list">
         <li>
-          Circulating tumor cells were cultured on soft (0.5 kPa) and stiff (5 kPa) polyacrylamide gel substrates to simulate distinct tissue microenvironments and investigate how extracellular stiffness influences cellular behavior.
-          To visualize cellular structure, cytoplasmic morphology was labeled using CellMask fluorescence staining while nuclear morphology was captured using Hoechst staining. High-resolution fluorescence microscopy imaging was then used to compare structural adaptations across substrate conditions.
+          Circulating tumor cells were cultured on soft (0.5 kPa) and stiff (5 kPa) polyacrylamide gel substrates over a three-month experimental period to simulate distinct extracellular microenvironments. To visualize cellular structure, cytoplasmic morphology was labeled with CellMask (Cy5 channel, red), while nuclear morphology was captured with Hoechst (DAPI channel, blue). High-resolution fluorescence microscopy imaging captured these structural adaptations, highlighting visible morphology differences between oft and stiff environments. Cells cultured on stiffer substrates demonstrated increased spreading and structural irregularity, exhibiting more elongated and blob-like morphologies compared to the rounder and more compact cellular organization observed in softer extracellular environments.
         </li>
      <div class="research-image-container">
       <img src="CTC Imaging.png" width="500">
        <p class="image-caption">
-         Fluorescence microscopy imaging of circulating tumor cells cultured on soft versus stiff polyacrylamide gel substrates using CellMask and Hoechst staining.
+         Fluorescence microscopy imaging of CTCs
        </p>
 </div>
         <li>
-          To quantify morphology differences across substrate conditions, optimized Cellpose segmentation workflows and PCA-based computational analysis were applied to both cytoplasmic and nuclear imaging datasets.
-          Analysis focused on morphology features including area, ellipse major axis length, and compactness, as these measurements most strongly reflected changes in cellular spreading, elongation, and structural variability between soft and stiff extracellular environments.
+          We quantified these visual differences by applying principal component analysis (PCA) to fluorescence microscopy imaging datasets in Excel. PCA results were visualized using heatmaps, where deeper red values indicate stronger positive contributions to principal component variation and deeper blue values indicate stronger negative contributions. These heatmaps simplified the interpretation of complex morphology datasets and highlighted structural features most strongly associated with extracellular matrix stiffness. Our analysis focused primarily on features that effectively captured differences in cellular spreading, elongation, and structural integrity between microenvironments: area, ellipse, major axis length, and compactness. 
         </li>
      <div class="research-image-container">
       <img src="Cellmask Stained Heatmap.png" width="500">
         <p class="image-caption">
-          PCA loadings heatmap highlighting morphology features contributing most strongly to cytoplasmic variation across substrate conditions.
+          Cy5 Cytoplasmic Morphology PCA Heatmap
         </p>
      </div>
      
    <div class="research-image-container">
     <img src="Hochest Stained Heatmap.png" width="500">
       <p class="image-caption">
-        PCA loadings heatmap of Hoechst-stained nuclear morphology features across soft and stiff extracellular environments.
+        DAPI Nuclear Morphology PCA Heatmap
       </p>
    </div>
   </ul>
@@ -544,14 +570,97 @@
    <h3 class="popup-section-title">
      Analysis & Interpretation
    </h3>
+         <table class="analysis-table">
+             <tr>
+               <th>
+                 Feature
+               </th>
+            
+               <th>
+                 Cy5 Trend
+               </th>
+            
+               <th>
+                 DAPI Trend
+               </th>
+            
+               <th>
+                 Interpretation
+               </th>
+             </tr>
+            
+             <tr>
+               <td>
+                 Major Axis Length
+               </td>
+            
+               <td>
+                 0.22 → 0.29
+               </td>
+            
+               <td>
+                 -0.23 → 0.29
+               </td>
+            
+               <td>
+                 Increased elongation and directional spreading under stiff environments
+               </td>
+             </tr>
+            
+             <tr>
+               <td>
+                 Compactness
+               </td>
+            
+               <td>
+                 -0.29 → 0.18
+               </td>
+            
+               <td>
+                 -0.21 → -0.28
+               </td>
+            
+               <td>
+                 Less circular and more structurally irregular morphology
+               </td>
+             </tr>
+            
+             <tr>
+               <td>
+                 Area / Ellipse Area
+               </td>
+            
+               <td>
+                 0.22–0.28
+               </td>
+            
+               <td>
+                 -0.28 → 0.23
+               </td>
+            
+               <td>
+                 Increased spreading and altered nuclear organization across environments
+               </td>
+             </tr>
+            </table>
+         
          <p class="popup-text">
-          Principal component analysis (PCA) was applied to both cytoplasmic and nuclear imaging datasets to identify which morphology features contributed most strongly to variation across substrate conditions. PCA reduced the complexity of the morphology data and helped isolate structural measurements that most effectively captured differences between cells cultured on soft and stiff extracellular environments.
-          <br><br>
-          Analysis focused primarily on area, ellipse major axis length, and compactness because these features consistently demonstrated strong PCA loadings and best reflected changes in cellular spreading, elongation, and structural irregularity. Increased cellular area and major axis length suggested greater spreading and directional elongation under stiffer extracellular conditions, while reduced compactness indicated more irregular and extended cellular morphologies.
+          The strongest morphology trends across both Cy5 and DAPI datasets were associated with major axis length and compactness, suggesting that extracellular stiffness strongly influences cellular elongation and structural organization.
           
           <br><br>
-          Similar trends were observed across both cytoplasmic and nuclear datasets, where cells cultured on stiff polyacrylamide gels demonstrated larger and more elongated structural organization compared to cells grown on softer substrates. Together, these findings suggest that extracellular matrix stiffness may promote cellular adaptations associated with increased motility, invasiveness, and metastatic potential during circulating tumor cell progression.
-       </p>
+          Major axis length demonstrated strong positive loading shifts across both channels, increasing from 0.22 to 0.29 in Cy5 and from -0.23 to 0.29 in DAPI, indicating increased cellular elongation under stiff extracellular conditions. In contrast, compactness demonstrated consistently negative loading behavior, ranging from -0.29 to 0.18 in Cy5 and remaining strongly negative in DAPI (-0.21 to -0.28), suggesting that cells cultured on stiff substrates adopted less circular and more structurally irregular morphologies.
+          
+          <br><br>
+          Area and ellipse area also demonstrated substantial loading variation. Cy5 datasets maintained strong positive loading values ranging from 0.22–0.28, while DAPI datasets shifted from strong negative values (-0.28 and -0.27) to positive PC2 contributions (0.22 and 0.23). These trends suggest that substrate stiffness influences cytoplasmic spreading and nuclear structural organization differently, while still producing coordinated morphology adaptation across the cell.
+          
+          <br><br>
+          Notably, Cy5 morphology features generally demonstrated stronger positive spreading-related loadings, while DAPI datasets exhibited larger negative-to-positive transitions across several features. This suggests that cytoplasmic remodeling may occur more gradually through increased spreading and elongation, whereas nuclear morphology undergoes more pronounced structural reorganization in response to extracellular stiffness. Across nearly all major features, stiff extracellular environments consistently shifted cells toward elongated, less compact, and more structurally irregular morphologies.
+
+          <br><br>
+          Together, these results indicate that cells cultured on stiff polyacrylamide gels exhibit increased spreading, elongation, and morphological irregularity compared to cells grown on softer extracellular environments. These structural adaptations are commonly associated with cytoskeletal remodeling, increased migratory behavior, and invasive metastatic potential, supporting the conclusion that extracellular matrix stiffness plays a significant role in shaping circulating tumor cell behavior during cancer progression.
+
+          <br><br>
+        </p>
          
      <!-- TOOLS & METHODS -->
     <h3 class="popup-section-title">
@@ -559,32 +668,22 @@
     </h3>
 
     <div class="skills-container">
-
-      <span class="skill-pill">
-        Fluorescence Microscopy
-      </span>
-
-      <span class="skill-pill">
-        Cellpose
-      </span>
-
-      <span class="skill-pill">
-        CellProfiler
-      </span>
-
-      <span class="skill-pill">
-        PCA
-      </span>
-
-      <span class="skill-pill">
-        Image Segmentation
-      </span>
-
-      <span class="skill-pill">
-        Computational Imaging
-      </span>
-
-    </div>
+       <button class="btn outline-btn skill-btn">
+         Cellpose
+       </button>
+    
+       <button class="btn outline-btn skill-btn">
+         PCA
+       </button>
+     
+       <button class="btn outline-btn skill-btn">
+         Fluorescence Microscopy
+       </button>
+     
+       <button class="btn outline-btn skill-btn">
+         Computational Imaging
+       </button>
+     </div>
     <br><br>
 
     <!-- PERSONAL THOUGHTS -->
