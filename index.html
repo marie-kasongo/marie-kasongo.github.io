@@ -305,6 +305,15 @@
     margin-bottom:10px;
    }
 
+   /* HEATMAP */
+   .heatmap-row{
+     display:flex;
+     gap:30px;
+     justify-content:center;
+     align-items:flex-start;
+     flex-wrap:wrap;
+   }
+   
    /* ANAYLISIS TABLE*/
    .analysis-table{
        width:100%;
@@ -519,6 +528,8 @@
     <p class="popup-text">
       This project investigated how extracellular matrix stiffness influences circulating tumor cell (CTC) morphology and behavior during cancer progression. Circulating tumor cells are cancer cells that detach from primary tumors and travel through the bloodstream, where they may eventually seed metastatic tumors in distant tissues. 
       To better understand how physical microenvironments shape cellular structure and invasive potential, CTCs were cultured on soft and stiff polyacrylamide gel substrates designed to simulate tissue-like environments. By combining fluorescence microscopy with computational image segmentation and morphology analysis, this work explored how substrate stiffness alters cellular spreading, elongation, and structural organization.
+
+     
     </p>
     <br><br>
 
@@ -543,20 +554,21 @@
         </li>
      </ul>
      
-     <div class="research-image-container">
-      <img src="Cellmask Stained Heatmap.png" width="500">
-        <p class="image-caption">
+     <div class="heatmap-row">
+       <div class="research-image-container">
+         <img src="Cellmask Stained Heatmap.png" width="450">
+         <p class="image-caption">
           Cy5 Cytoplasmic Morphology PCA Heatmap
-        </p>
-     </div>
-     
-   <div class="research-image-container">
-    <img src="Hochest Stained Heatmap.png" width="500">
-      <p class="image-caption">
-        DAPI Nuclear Morphology PCA Heatmap
-      </p>
-   </div>
-<br><br> 
+         </p>
+      </div>
+       <div class="research-image-container">
+        <img src="Hochest Stained Heatmap.png" width="450">
+          <p class="image-caption">
+            DAPI Nuclear Morphology PCA Heatmap
+          </p>
+       </div>
+    </div>
+    <br><br> 
          
      <!-- ANALYSIS -->
    <h3 class="popup-section-title">
