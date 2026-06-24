@@ -846,103 +846,381 @@
           </span>
         
         <h2>HipHarmony</h2>
-         <h4>Engineering Design Project | Biomedical Device Design</h4>
-       <br>
-       
-       <h3 class="popup-section-title">
-        Project Overview
-       </h3>
-
-       <p class="popup-text">
-        HipHarmony is a hip resurfacing implant designed to support younger, highly active patients requiring hip replacement surgery. Traditional hip replacements often remove substantial amounts of healthy bone and may not adequately address the long-term mobility needs of athletes. Our goal was to develop a durable, bone-preserving solution capable of supporting high levels of physical activity while extending implant longevity beyond conventional designs.
-       </p>
-       <br>
-
-       <h3 class="popup-section-title">
-        Problem Identification
-       </h3>
-
-       <p class="popup-text">
-        The project centered around the challenge of balancing durability, mobility, recovery time, and long-term performance in hip replacement systems. Through market research and user analysis, our team identified professional athletes as an underserved user group. Unlike typical hip replacement patients, athletes require implants capable of withstanding greater mechanical loads while preserving natural movement and minimizing future revision surgeries.
-       </p>
-       <br>
-
-       <h3 class="popup-section-title">
-        User Research & Design Requirements
-       </h3>
-
-       <ul class="popup-list">
-         <li>Developed a user-centered design around a professional athlete persona recovering from hip degeneration and injury.</li>
-         <li>Prioritized implant longevity, preservation of healthy bone, and maintenance of natural gait mechanics.</li>
-         <li>Evaluated recovery outcomes, range of motion, durability, and implant stability as key design requirements.</li>
-          <li>Conducted empathy mapping, persona development, and competitive analysis to guide engineering decisions.</li>
-        </ul>
-       <br>
-
-       <h3 class="popup-section-title">
-        Engineering Design Process
-       </h3>
-
-       <p class="popup-text">
-        The design process began with extensive brainstorming, concept sketching, and material research. Multiple design alternatives were evaluated using decision matrices and feasibility-attractiveness frameworks to compare performance, manufacturability, biocompatibility, and long-term durability.
-       </p>
-
-       <ul class="popup-list">
-        <li>Generated and evaluated multiple implant concepts through iterative sketching and prototyping.</li>
-        <li>Compared ceramic, titanium, cobalt-chromium, and polyethylene material systems.</li>
-        <li>Analyzed porous versus non-porous surfaces and cemented versus uncemented fixation strategies.</li>
-        <li>Evaluated hip resurfacing against total hip replacement approaches for active patient populations.</li>
-       </ul>
-       <br>
-
-       <h3 class="popup-section-title">
-        Final Design Solution
-       </h3>
-
-       <p class="popup-text">
-        The final HipHarmony design combines a ceramic-on-ceramic articulation system with a titanium acetabular cup and stem. The implant incorporates a porous acetabular surface to encourage bone ingrowth and utilizes acetabular screws for additional fixation and long-term stability.
-       </p>
-
-       <ul class="popup-list">
-        <li>Ceramic-on-ceramic bearing surface selected for exceptional wear resistance and longevity.</li>
-        <li>Titanium components chosen for their high strength-to-weight ratio and biocompatibility.</li>
-        <li>Porous surface architecture promotes osseointegration and long-term implant stability.</li>
-        <li>Uncemented fixation preserves bone density and supports younger, active patients.</li>
-        <li>Additional screw fixation enhances support during recovery and long-term use.</li>
-       </ul>
-       <br>
+          <h4>
+          Engineering Design Project | Orthopedic Implant Design
+          </h4>
+          <br><br>
+          
+          <h3 class="popup-section-title">
+          Overview
+          </h3>
+          <p class="popup-text">
+          HipHarmony is an athlete-focused hip resurfacing implant designed to improve durability, mobility, and long-term performance for young and highly active patients. Unlike traditional hip replacements, which are primarily optimized for older adults, HipHarmony prioritizes bone preservation, reduced wear, and a faster return to activity. Through user-centered design, biomaterials research, CAD modeling, prototyping, and finite element analysis (FEA), our team developed a concept that combines ceramic articulation surfaces, titanium structural support, and porous fixation technology to create a durable solution for high-performance users.
+          </p>
 
         <h3 class="popup-section-title">
-         Prototyping & Validation
+         Industry Challenges
         </h3>
 
-       <p class="popup-text">
-        The final concept was modeled in Fusion 360 and translated into a high-fidelity physical prototype through additive manufacturing. Finite Element Analysis (FEA) was performed to evaluate stress and strain behavior under simulated loading conditions.
-       </p>
+        <p class="popup-text">
+         Current hip resurfacing and replacement systems provide effective treatment for many patients, but they present several limitations for younger, highly active individuals. Before developing HipHarmony, we evaluated existing implant technologies to identify opportunities for improvement and establish the engineering goals that guided our design process.
+        </p>
 
-       <ul class="popup-list">
-        <li>Created CAD assemblies and engineering drawings in Fusion 360.</li>
-        <li>Developed low-fidelity and high-fidelity physical prototypes.</li>
-        <li>Performed structural simulations to evaluate implant performance.</li>
-        <li>Validated stability under a simulated 600 N loading condition.</li>
-        <li>Analyzed stress and strain distributions to identify potential areas for future optimization.</li>
-       </ul>
-       <br>
+       <table class="analysis-table">
+        <tr>
+         <th>Current Solution</th>
+         <th>Key Limitation</th>
+        </tr>
+        
+        <tr>
+         <td><strong>Total Hip Replacement</strong></td>
+         <td>Removes a significant amount of healthy bone, making future revision surgeries more difficult for younger patients.</td>
+        </tr>
+        
+        <tr>
+         <td><strong>Traditional Hip Resurfacing</strong></td>
+         <td>Typical implant lifespan of approximately 15–20 years may require multiple revision surgeries over a patient's lifetime.</td>
+        </tr>
+        
+        <tr>
+         <td><strong>Metal-on-Metal Implants</strong></td>
+         <td>Can release metal ions into surrounding tissue, increasing the risk of complications such as metallosis.</td>
+        </tr>
+        
+        <tr>
+         <td><strong>Standard Implant Designs</strong></td>
+         <td>Most implants are optimized for older adults rather than athletes and other highly active patients.</td>
+        </tr>
+        <tr>
+         </tr><td><strong>Existing Hip Resurfacing Market</strong></td>
+         <td>Few commercially available devices specifically prioritize athletic performance, rapid recovery, and long-term durability.</td>
+       </tr>
+       </table>
 
        <h3 class="popup-section-title">
-        Key Outcomes
+        Human-Centered Design
        </h3>
+        <p class="popup-text">
+         To guide the development of HipHarmony, we created multiple user personas and evaluated several target populations, including retirees, labor-intensive workers, recreational athletes, and professional athletes. Through persona mapping, empathy mapping, and journey mapping, we identified professional athletes as the population that would benefit most from a bone-preserving, high-performance hip resurfacing implant.
+         Our primary persona, Nathan, is a 30-year-old professional soccer player experiencing severe hip pain that threatens both his athletic career and quality of life. Nathan values bone preservation, long-term mobility, rapid recovery, and the ability to continue competing at an elite level. This user-centered approach shaped every major engineering decision throughout the project.
+        </p>
+        
+        <div class="research-image-container">
+         <img src="Nathan Persona.png" width="650">
+         <p class="image-caption">
+          Primary user persona developed through human-centered design research.
+         </p>
+        </div>
+        <br>
+        
+        <div class="research-image-container">
+         <img src="Nathan Journey Map.png" width="900">
+          <p class="image-caption">
+           Journey map illustrating the patient experience from injury through recovery.
+          </p>
+        </div>
+        <br>
+        
+        <div class="research-image-container">
+         <img src="Nathan Empathy Map.png" width="900">
+         <p class="image-caption">
+          Empathy map highlighting the user's goals, concerns, behaviors, and emotions.
+         </p>
+        </div>
 
-       <ul class="popup-list">
-        <li>Applied the complete engineering design process from user research through prototype validation.</li>
-        <li>Utilized decision matrices and quantitative evaluation methods to guide material selection.</li>
-        <li>Developed experience in biomedical device design, CAD modeling, prototyping, and simulation.</li>
-        <li>Balanced patient-centered needs with engineering feasibility, manufacturability, and performance requirements.</li>
-       </ul>
-       </p>
+        <h3 class="popup-section-title">
+         Design Requirements
+        </h3>
+        <p class="popup-text">
+         Insights gathered through our user research established the engineering requirements that guided the remainder of the design process. These requirements balanced clinical performance with the functional needs of highly active patients.
+        </p>
+        
+        <ul class="popup-list">
+            <li><strong>Durability:</strong> Withstand repetitive, high-impact athletic activity.</li>
+            <li><strong>Mobility:</strong> Preserve natural range of motion and enable return to sport.</li>
+            <li><strong>Bone Preservation:</strong> Maintain healthy anatomy and preserve future treatment options.</li>
+            <li><strong>Stability:</strong> Remain secure during dynamic movements such as running and jumping.</li>
+            <li><strong>Recovery:</strong> Support faster rehabilitation and return to daily activities.</li>
+            <li><strong>Longevity:</strong> Minimize the likelihood of revision surgeries.</li>
+            <li><strong>Biocompatibility:</strong> Promote patient safety while minimizing wear and complications.</li>
+        </ul>
+
+        <h3 class="popup-section-title">
+         Material Selection & Decision Making
+        </h3>
+        
+        <p class="popup-text">
+         After establishing the design requirements, we evaluated multiple biomaterials, fixation methods, and implant configurations using literature reviews and a weighted decision matrix. Each option was assessed based on durability, wear resistance, biocompatibility, stability, manufacturability, and long-term performance. This systematic approach allowed us to select the highest-performing combination of materials for each component of the implant.
+        </p>
+        <div class="research-image-container">
+         <img src="HipHarmony Materials.png" width="700">
+         <p class="image-caption">
+          Final material selections for each major implant component.
+         </p>
+        </div>
+        
+        <ul class="popup-list">
+         <li>
+          <strong>Zirconia-Toughened Alumina (ZTA) Ceramic</strong> was selected for the articulation surface because of its exceptional wear resistance, low friction, and long-term durability compared to traditional metal-on-metal systems.
+         </li>
+         
+         <li>
+          <strong>Titanium Acetabular Cup</strong> provides a lightweight yet mechanically strong structural foundation while maintaining excellent biocompatibility and corrosion resistance.
+         </li>
+         
+         <li>
+          <strong>Porous Surface Coating</strong> promotes bone ingrowth, strengthening biological fixation and improving long-term implant stability.
+         </li>
+         
+         <li>
+          <strong>Uncemented Fixation</strong> allows the implant to naturally integrate with surrounding bone while reducing dependence on bone cement.
+         </li>
+         
+         <li>
+          <strong>Titanium Alloy Screws</strong> provide additional fixation during early recovery and improve stability under high-impact loading.
+         </li>
+         
+         <li>
+          <strong>Bone-Preserving Hip Resurfacing</strong> retains much of the patient's natural femoral head, preserving healthy bone and making future revision procedures easier if needed.
+         </li>
+        </ul>
+
+         <p class="popup-text">
+          Once the material system and fixation strategy were finalized, we translated these engineering decisions into physical concepts through iterative sketching, CAD development, and prototyping.
+         </p>
+
+        <h3 class="popup-section-title">
+         Concept Development
+        </h3>
+        <p class="popup-text">
+         Before developing the final CAD model, we generated multiple design concepts through iterative sketching and low-fidelity prototyping. These early designs explored different implant geometries, fixation strategies, and component configurations while balancing durability, bone preservation, manufacturability, and long-term stability. Iterating through multiple concepts allowed us to refine the design before committing to a digital prototype.
+        </p>
+        
+        <div class="heatmap-row">
+         <div class="research-image-container">
+          <img src="Hip Sketch 1.png" width="420">
+          <p class="image-caption">
+           Early concept sketches exploring implant geometry and fixation methods.
+          </p>
+         </div>
+         
+         <div class="research-image-container">
+          <img src="Hip Sketch 2.png" width="420">
+          <p class="image-caption">
+           Refined concept illustrating component layout and overall implant architecture.
+          </p>
+         </div>
+        </div>
+
+        <p class="popup-text">
+         The concepts developed during sketching informed the dimensions, material placement, and structural features incorporated into the final CAD model. Once the overall design was finalized, the implant was modeled in Fusion 360 using measurements derived from anatomical references and existing hip resurfacing systems.
+        </p>
+
+        <h3 class="popup-section-title">
+         CAD Modeling
+        </h3>
+
+        <p class="popup-text">
+         Following concept development, the final implant was modeled in Fusion 360 using anatomical measurements from professional athletes and reference dimensions from existing hip resurfacing systems. Each component was designed to balance structural performance, anatomical compatibility, and manufacturability while preserving as much healthy bone as possible.
+        </p>
+
+        <div class="research-image-container">
+         <img src="Hip CAD Model.png" width="700">
+         <p class="image-caption">
+          Final HipHarmony assembly modeled in Fusion 360.
+         </p>
+        </div>
+
+        <h3 class="popup-section-title">
+         Engineering Specifications
+        </h3>
+        
+        <table class="analysis-table">
+         <tr>
+          <th>Component</th>
+          <th>Design Specification</th>
+          <th>Purpose</th>
+         </tr>
+         
+         <tr>
+          <td><strong>Titanium Acetabular Cup</strong></td>
+          <td>57.3 ± 2.4 mm diameter</td>
+          <td>Provides structural support while matching patient anatomy.</td>
+         </tr>
+         
+         <tr>
+          <td><strong>Ceramic Liner</strong></td>
+          <td>6–16 mm thickness</td>
+          <td>Reduces wear and provides a low-friction articulation surface.</td>
+         </tr>
+         
+         <tr>
+          <td><strong>Ceramic Femoral Head</strong></td>
+          <td>48.3 ± 2.4 mm diameter</td>
+          <td>Maintains smooth articulation with the acetabular liner.</td>
+         </tr>
+         
+         <tr>
+          <td><strong>Fixation Screws</strong></td>
+          <td>2–3 titanium screws</td>
+          <td>Improve implant stability during early recovery.</td>
+         </tr>
+         
+         <tr>
+          <td><strong>Porous Coating</strong></td>
+          <td>200–500 μm pore size</td>
+          <td>Promotes bone ingrowth and long-term fixation.</td>
+         </tr>
+         
+         <tr>
+          <td><strong>Titanium Femoral Stem</strong></td>
+          <td>40–44 mm offset</td>
+          <td>Provides additional mechanical support.</td>
+         </tr>
+        </table>
+
+        <p class="popup-text">
+         Once the CAD model and component dimensions were finalized, we evaluated the implant's structural performance using Finite Element Analysis (FEA). This allowed us to examine stress and strain distributions under simulated loading conditions before physical manufacturing.
+        </p>
+
+        <h3 class="popup-section-title">
+         Finite Element Analysis (FEA)
+        </h3>
+        
+        <p class="popup-text">
+         To evaluate the structural integrity of the final design, we performed Finite Element Analysis (FEA) in Fusion 360 under a simulated 600 N (130 lb) loading condition. The simulation was used to examine stress and strain distributions throughout the implant and identify areas that may require future optimization while verifying that the design remained structurally stable.
+        </p>
+
+        <div class="heatmap-row">
+         <div class="research-image-container">
+          <img src="Hip Stress Analysis.png" width="420">
+          <p class="image-caption">
+           Von Mises stress distribution under a simulated 600 N loading condition.
+          </p>
+         </div>
+         
+         <div class="research-image-container">
+          <img src="Hip Strain Analysis.png" width="420">
+          <p class="image-caption">
+           Strain distribution across the implant during structural simulation.
+          </p>
+         </div>
+        </div>
+
+        <h3 class="popup-section-title">
+         Simulation Results
+        </h3>
+        
+        <p class="popup-text">
+         The simulation demonstrated that HipHarmony maintained structural stability under the applied loading condition. Stress was concentrated primarily around fixation interfaces and load-bearing regions, while strain remained within expected ranges across the implant. These results suggest that the ceramic articulation surfaces, titanium structural components, and porous fixation strategy effectively distribute mechanical loads while supporting long-term durability and stability.
+        </p>
+
+        <ul class="popup-list">
+         <li>Validated structural performance using a 600 N loading simulation.</li>
+         <li>Identified regions of highest stress concentration for future optimization.</li>
+         <li>Confirmed stable stress and strain distribution across the implant.</li>
+         <li>Demonstrated how computational simulation can guide medical device design before manufacturing.</li>
+        </ul>
+
+        <h3 class="popup-section-title">
+         Design Evaluation & Future Improvements
+        </h3>
+        <p class="popup-text">
+         HipHarmony successfully met many of the original design objectives by prioritizing durability, bone preservation, mobility, and long-term stability for highly active patients. While the design demonstrates strong engineering potential, several opportunities remain for further optimization before clinical implementation.
+        </p>
+
+        <table class="analysis-table">
+         <tr>
+          <th>Strengths</th>
+          <th>Challenges</th>
+          <th>Future Improvements</th>
+         </tr>
+         
+         <tr>
+          <td>
+           <strong>Durability</strong><br>
+           Ceramic articulation surfaces minimize wear while titanium components provide long-term structural support.
+          </td>
+          
+          <td>
+           <strong>Stress Concentration</strong><br>
+           Fixation screws create localized stress regions that could influence long-term implant performance.
+          </td>
+          
+          <td>
+           <strong>Optimize Screw Placement</strong><br>
+           Perform additional FEA simulations to improve force distribution and reduce stress concentrations.
+          </td>
+         </tr>
+         
+         <tr>
+          <td>
+           <strong>Stability</strong><br>
+           Screw-assisted fixation improves implant security during high-impact activities.
+          </td>
+          <td>
+           <strong>Production Cost</strong><br>
+           Premium biomaterials such as ceramics and titanium increase manufacturing costs.
+          </td>
+          <td>
+           
+          </td><strong>Investigate Alternative Materials</strong><br>
+          Evaluate advanced titanium alloys and emerging biomaterials to reduce weight and cost.
+        </td>
+        </tr>
+         <tr>
+          <td>
+           <strong>Mobility</strong><br>
+           Bone-preserving resurfacing maintains natural anatomy and supports greater range of motion.
+          </td>
+          
+          <td>
+           <strong>Scalability</strong><br>
+           The athlete-focused design may require modification for patients with different activity levels and bone densities.
+          </td>
+          
+          <td>
+           <strong>Refine Implant Geometry</strong><br>
+           Continue optimizing the hemispherical design to better replicate native hip anatomy.
+          </td>
+         </tr>
+         <tr>
+          <td>
+           <strong>Biomechanical Performance</strong><br>
+           The implant more closely replicates natural hip movement while supporting athletic performance.
+          </td>
+          <td>
+           <strong>Surgical Complexity</strong><br>
+           Additional fixation hardware may increase surgical time and technical complexity.
+          </td>
+          <td>
+           <strong>Patient-Specific Customization</strong><br>
+           Explore 3D scanning and custom-fit implants tailored to individual anatomy.</td>
+         </tr>
+        </table>
+
+        <h3 class="popup-section-title">
+         Project Reflection
+        </h3>
+        <p class="popup-text">
+         HipHarmony strengthened my understanding of the complete biomedical engineering design process—from identifying an unmet clinical need through user-centered research, material selection, CAD modeling, and computational validation. More importantly, the project demonstrated how engineering decisions must balance technical performance with patient needs, manufacturability, and long-term clinical outcomes. It reinforced my interest in orthopedic device design and the development of technologies that improve patient mobility and quality of life.
+        </p>
+
+        <h3 class="popup-section-title">
+         Skills & Technologies
+        </h3>
+        <div class="skills-container">
+         <button class="btn outline-btn skill-btn">Fusion 360</button>
+         <button class="btn outline-btn skill-btn">Finite Element Analysis</button>
+         <button class="btn outline-btn skill-btn">CAD Modeling</button><button class="btn outline-btn skill-btn">Biomedical Device Design</button>
+         <button class="btn outline-btn skill-btn">Biomaterials</button>
+         <button class="btn outline-btn skill-btn">Human-Centered Design</button><button class="btn outline-btn skill-btn">Engineering Design</button>
+         <button class="btn outline-btn skill-btn">Prototyping</button>
+         <button class="btn outline-btn skill-btn">3D Printing</button>
+         <button class="btn outline-btn skill-btn">Technical Research</button>
+        </div>
     
       </div>
-    
     </div>
        
         <!-- PATIENT ADVOCACY -->
