@@ -246,7 +246,59 @@
       font-size:18px;
       font-family:'Cormorant Garamond', sans-serif;
     }
+   
+    /* Bone Comparison */
+   .bone-comparison{
+    margin-top:28px;
+   }
+   
+   .comparison-title{
+    text-align:center;
+    color:#16325B;
+    font-size:22px;
+    margin-bottom:18px;
+   }
+   
+   .comparison-image{
+    width:100%;
+    border-radius:16px;
+    border:1px solid #E7DED8;
+    box-shadow:0 10px 24px rgba(0,0,0,.08);
+    margin-bottom:25px;
+   }
+   
+   .comparison-notes{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:22px;
+   }
+   
+   .comparison-box{
+    padding:22px;
+    border-radius:16px;
+    background:#FAF7F4;
+   }
 
+  .comparison-box h5{
+   font-size:20px;
+   color:#16325B;
+   margin-bottom:12px;
+  }
+   
+   .comparison-box p{
+    font-size:17px;
+    line-height:1.7;
+    color:#5E5753;
+   }
+   
+   .traditional{
+    border:2px solid #DFA6A6;
+   }
+   
+   .hipharmony{
+    border:2px solid #A8C8E8;
+   }
+   
    /*Leadership & Advocay*/
    
    .modal{
@@ -886,21 +938,29 @@
              Removes a significant amount of healthy bone, making future revision surgeries more difficult.
             </p>
             <div class="bone-comparison">
-             <div class="bone-card">
-              <h5>Traditional Total Hip Replacement</h5>
-              <img src="hip-xrau.png.png" alt="Traditional Hip Replacement">
-              <p class="bone-caption">
-               A long femoral stem replaces much of the natural femur, requiring substantial bone removal.
-              </p>
-             </div>
-             <div class="bone-card">
+             <h4 class="comparison-title">
+              Bone Preservation Comparison
+             </h4>
+             <img src="hip-xray.png.png"
+              class="comparison-image"
+              alt="Traditional Hip Replacement vs HipHarmony">
+             <div class="comparison-notes">
+              <div class="comparison-box traditional">
+               <h5>Traditional Total Hip Replacement</h5>
+               <p>
+                A long femoral stem extends deep into the femur, requiring removal of a substantial amount of healthy bone.
+                This makes future revision surgeries more difficult, particularly for younger patients.
+               </p>
+              </div>
+              
+             <div class="comparison-box hipharmony">
               <h5>HipHarmony Resurfacing</h5>
-              <img src="Hip CAD Model.png" alt="HipHarmony CAD">
-              <p class="bone-caption">
-               HipHarmony preserves the natural femoral head while providing structural support through resurfacing.
+              <p>
+               HipHarmony preserves the natural femoral head and neck by using a short resurfacing implant. This conserves healthy bone, simplifies future revisions, and better supports highly active patients.
               </p>
              </div>
-            </div>
+             </div>
+            </div> 
            </td>
           </tr>
           
