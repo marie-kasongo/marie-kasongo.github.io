@@ -353,8 +353,8 @@
    
    .research-image-container{
     text-align:center;
-    display: black;
-    width: 100%;
+    display:block;
+    width:100%;
    }
 
    /* MODEL FOOTER*/
@@ -411,7 +411,12 @@
      gap:30px;
      justify-content:center;
      align-items:flex-start;
-     flex-wrap:wrap;
+     flex-wrap:nowrap;
+   }
+
+   .heatmap-row .research-image-container{
+     flex: 0 0 350px;
+     text-align:center;
    }
    
    /* ANAYLISIS TABLE*/
