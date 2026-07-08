@@ -1541,6 +1541,103 @@
         <li><strong>Rectangular Housing:</strong> Maximizes internal space while remaining straightforward to manufacture and assemble.</li>
        </ul>
 
+       <!----- Testing & Validation ---->
+       <h3 class="popup-section-title">
+        Testing & Validation
+       </h3>
+       
+       <div class="subsection">
+        <h3>Circut</h3>
+
+        <p class="popup-text">
+         Using the component specifications, we designed an operational amplifier circuit to amplify the pressure transducer's low-voltage output into a signal readable by the Arduino. Developing the circuit digitally first allowed resistor values, amplifier stages, and signal flow to be finalized before assembling physical hardware.
+        </p>
+
+        <div class="research-image-container">
+         <img src="steadypulse-circut-diagram.png" width="400">
+         <p class="image-caption">
+          Figure 9: Digital circuit diagram for amplifying the pressure transducer signal
+         </p>
+        </div>
+       
+        <div class="research-image-container">
+          <img src="steadypulse-circut-diagram.png" width="400">
+          <p class="image-caption">
+           Figure 10: Opamp Pins
+          </p>
+         </div>
+       
+       <div class="subsection">
+        <h3>Virtual Simulation</h3>
+        <p>
+         We recreated the design in TinkerCAD to verify wiring and validate circuit behavior in a virtual environment. Simulating the circuit first helped identify wiring issues, confirm the expected amplifier output, reduce debugging time, and minimize unnecessary hardware revisions.
+        </p>
+       </div>
+        
+        <div class="research-image-container">
+         <img src="steadypulse-tinkercad-circut.png" width="400">
+         <p class="image-caption">
+          Figure 11: Tinkercad circut
+         </p>
+        </div>
+
+        <div class="research-image-container">
+         <img src="steadypulse-schematic-tinkercad-circut.png" width="400">
+         <p class="image-caption">
+          Figure 12: Schematic view of the tinkercad circuit 
+         </p>
+        </div>
+
+        <div class="subsection">
+        <h3>Board Testing</h3>
+         <p>
+         ...  
+         </p>
+        </div>
+        
+        <div class="research-image-container">
+         <img src="steadypulse-schematic-tinkercad-circut.png" width="400">
+         <p class="image-caption">
+          Figure 13: Breadboard physical circuit with red wires representing testing procedure
+         </p>
+        </div>
+
+         <div class="research-image-container">
+         <img src="steadypulse-schematic-tinkercad-circut.png" width="400">
+         <p class="image-caption">
+          Figure 14: Multimeter above power supply, testing the breadboard circuit
+         </p>
+        </div>
+
+        <p>
+         After validating the design in TinkerCAD, the circuit was assembled on a breadboard for physical testing. A laboratory power supply generated a known input signal while a multimeter measured the amplified output voltage. Comparing the measured output with the expected amplification verified that the operational amplifier functioned correctly and that the pressure transducer signal could be reliably conditioned for use by the Arduino.
+        </p>
+       </div>
+
+       <!-- FINAL DESIGN -->
+       <h3 class="popup-section-title">
+        Final Design
+       </h3>
+
+       <div class="research-image-container">
+         <img src="steadypulse-final-design.png" width="400">
+         <p class="image-caption">
+          Figure 15: Final Design
+         </p>
+        </div>
+
+        <!-- FUTURE IMPROVEMENTS -->
+        <!-- SKILLS & TECHNOLOGIES -->
+       
+
+        
+        
+
+
+       
+
+       
+
        
       
            
