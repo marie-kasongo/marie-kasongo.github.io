@@ -1496,7 +1496,8 @@
        <p class="popup-text">
         SteadyPulse was designed for older adults managing hypertension and PTSD-related anxiety, so every aspect of the enclosure prioritized accessibility, comfort, and intuitive operation. Guided by our primary user persona, Tom, we explored multiple enclosure layouts and interface designs to create a device that was easy to use independently, reduced user frustration, and inspired confidence during at-home blood pressure monitoring.
        </p>
-       
+
+      <div class="heatmap-row"> 
        <div class="research-image-container">
         <img src="steadypulse-component-measurements.png" width="400">
         <p class="image-caption">
@@ -1510,12 +1511,14 @@
          Figure 6: Individual Component Measurements
         </p>
        </div>
+      </div>
 
        <p class="popup-text">
         Using these component dimensions, we developed preliminary enclosure layouts to evaluate button placement, display size, tubing ports, and overall device geometry before beginning CAD modeling. Multiple configurations were considered before selecting a simple rectangular enclosure that balanced accessibility, manufacturability, and efficient internal packaging.
         For prototyping, the enclosure was fabricated using PLA through 3D printing. PLA was selected because it is lightweight, inexpensive, and allows rapid iteration during the design process. This enabled us to quickly test fit, component placement, and overall usability before producing the final prototype.
        </p>
-       
+
+       <div class="heatmap-row"> 
        <div class="research-image-container">
         <img src="steadypulse-cad-box.png" width="400">
         <p class="image-caption">
@@ -1528,6 +1531,7 @@
         <p class="image-caption">
          Figure 8: Different angles of the final CAD lid
         </p>
+       </div>
        </div>
        
        <p class="popup-text">
@@ -1553,6 +1557,7 @@
          Using the component specifications, we designed an operational amplifier circuit to amplify the pressure transducer's low-voltage output into a signal readable by the Arduino. Developing the circuit digitally first allowed resistor values, amplifier stages, and signal flow to be finalized before assembling physical hardware.
         </p>
 
+        <div class="heatmap-row"> 
         <div class="research-image-container">
          <img src="steadypulse-circut-diagram.png" width="400">
          <p class="image-caption">
@@ -1566,6 +1571,7 @@
            Figure 10: Opamp Pins
           </p>
          </div>
+        </div>
        
        <div class="subsection">
         <h3>Virtual Simulation</h3>
@@ -1574,6 +1580,7 @@
         </p>
        </div>
         
+       <div class="heatmap-row"> 
         <div class="research-image-container">
          <img src="steadypulse-tinkercad-circut.png" width="400">
          <p class="image-caption">
@@ -1587,6 +1594,7 @@
           Figure 12: Schematic view of the tinkercad circuit 
          </p>
         </div>
+       </div>
 
         <div class="subsection">
         <h3>Board Testing</h3>
@@ -1594,20 +1602,22 @@
          ...  
          </p>
         </div>
-        
+
+       <div class="heatmap-row"> 
         <div class="research-image-container">
          <img src="steadypulse-schematic-tinkercad-circut.png" width="400">
          <p class="image-caption">
           Figure 13: Breadboard physical circuit with red wires representing testing procedure
          </p>
         </div>
-
-         <div class="research-image-container">
+        
+        <div class="research-image-container">
          <img src="steadypulse-schematic-tinkercad-circut.png" width="400">
          <p class="image-caption">
           Figure 14: Multimeter above power supply, testing the breadboard circuit
          </p>
         </div>
+       </div>
 
         <p>
          After validating the design in TinkerCAD, the circuit was assembled on a breadboard for physical testing. A laboratory power supply generated a known input signal while a multimeter measured the amplified output voltage. Comparing the measured output with the expected amplification verified that the operational amplifier functioned correctly and that the pressure transducer signal could be reliably conditioned for use by the Arduino.
