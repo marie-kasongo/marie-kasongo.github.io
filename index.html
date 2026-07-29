@@ -609,6 +609,324 @@
 
       <div class="cards">
 
+        <<!-- 3D Tissue Dissociation CARD -->
+         <div class="card-link" onclick="openModal('dissociationModal')">
+           <div class="card">
+             <h3>
+               3D Tissue Dissociation
+             </h3>
+             <p>
+               Developed and optimized a hybrid electrical and enzymatic tissue dissociation protocol to improve single-cell recovery from complex 3D tissue models for downstream biomedical research applications.
+             </p>
+           </div>
+         </div>
+
+         <!-- DISSOCIATION MODAL -->
+         <div id="dissociationModal" class="modal">  
+           <div class="modal-content">
+             <span class="close" onclick="closeModal('dissociationModal')">
+               &times;
+             </span>
+         
+             <h2>
+               Optimization of a Hybrid Electrical–Enzymatic Tissue Dissociation Strategy
+             </h2>
+         
+             <h4>
+               Independent Biomedical Engineering Research | Brown University
+             </h4>
+             <br><br>
+
+          <!-- ABSTRACT -->
+           <h3 class="popup-section-title">
+             Abstract
+           </h3>
+            <p class="popup-text">
+              Three-dimensional (3D) tissue models better replicate native tissue architecture and cellular interactions than traditional two-dimensional culture systems, making them increasingly valuable for disease modeling, drug discovery, and regenerative medicine. However, efficient dissociation of these tissues into high-quality single-cell suspensions remains a significant challenge. Conventional enzymatic methods are often slow, inconsistent, and can reduce cell viability through prolonged exposure to digestive enzymes.
+              <br><br>
+              This project investigated a hybrid electrical–enzymatic dissociation strategy designed to improve tissue dissociation efficiency while preserving cellular integrity. Electrical stimulation was applied prior to enzymatic digestion to increase tissue permeability and facilitate more effective enzyme penetration.
+              <br><br>
+              Using beef liver tissue as a reproducible optimization model, experimental parameters including voltage, frequency, tissue biopsy size, electric field strength, and mechanical agitation were systematically optimized through iterative experimentation. The optimized protocol was subsequently applied to three-dimensional HepG2 spheroid cultures to evaluate its translational potential for engineered tissue models.
+              <br><br>
+              This work establishes a reproducible framework for hybrid tissue dissociation that has potential applications in cancer research, tissue engineering, regenerative medicine, and single-cell sequencing workflows.
+            </p>
+           <br><br>
+
+          <!-- METHODS -->
+           <h3 class="popup-section-title">
+             Methods
+           </h3>
+       
+           <p class="popup-text">
+             Beef liver tissue served as the experimental model because of its structural similarity to soft mammalian tissues and its ability to provide reproducible optimization conditions.
+             <br><br>
+             Tissue samples were exposed to controlled electrical stimulation before enzymatic digestion using collagenase. Rather than changing multiple variables simultaneously, experimental parameters were optimized individually while all remaining conditions were held constant. This systematic approach enabled the independent evaluation of each variable's influence on tissue dissociation efficiency.
+             <br><br>
+             Across the study, the following parameters were investigated:
+           </p>
+       
+           <ul class="popup-list">
+             <li><strong>Voltage (Vpp)</strong></li>
+             <li><strong>Frequency (kHz)</strong></li>
+             <li><strong>Electric field strength (electrode gap distance)</strong></li>
+             <li><strong>Biopsy size</strong></li>
+             <li><strong>Mechanical shaking speed</strong></li>
+           </ul>
+       
+           <p class="popup-text">
+             Each experimental condition was repeated across six replicate trials to ensure reproducibility. Following electrical treatment, tissues underwent enzymatic digestion before being mechanically agitated to complete dissociation. Cell recovery and dissociation efficiency were evaluated after every experiment to identify the optimal parameter combination.
+           </p>
+           <br><br>
+
+          <!-- EXPERIMENTAL WORKFLOW -->
+           <h3 class="popup-section-title">
+             Experimental Workflow
+           </h3>
+       
+           <p class="popup-text">
+             Optimization followed an iterative workflow in which a single experimental parameter was varied while all remaining variables were held constant. Once the optimal value for a parameter was identified, it was fixed before evaluating the next variable. This sequential optimization strategy minimized experimental bias and produced a reproducible hybrid dissociation protocol.
+           </p>
+           <br><br>
+       
+           <div class="research-image-container">
+             <img src="workflow-diagram.png" width="900">
+             <p class="image-caption">
+               Experimental optimization workflow used to develop the hybrid electrical–enzymatic tissue dissociation protocol.
+             </p>
+           </div>
+           <br><br>
+
+       <!-- RESULTS -->
+        <h3 class="popup-section-title">
+         Results
+        </h3>
+        
+        <p class="popup-text">
+        Five independent experimental parameters were systematically optimized to
+        identify a reproducible electrical dissociation protocol that maximized tissue
+        disruption while preserving sample integrity. Each variable was investigated
+        individually while holding all remaining parameters constant, allowing the
+        effect of each parameter on dissociation efficiency to be isolated.
+        </p>
+        <br>
+        
+        <div class="heatmap-row">
+         <div class="research-image-container">
+          <img src="voltage-optimization.png" width="420">
+          <p class="image-caption">
+           Figure 1. Voltage optimization.
+          </p>
+         </div>
+        
+         <div class="research-image-container">
+          <img src="frequency-optimization.png" width="420">
+          <p class="image-caption">
+           Figure 2. Frequency optimization.
+          </p>
+         </div>
+        </div>
+        <br><br>
+        
+        <div class="heatmap-row">
+         <div class="research-image-container">
+          <img src="biopsy-size.png" width="420">
+          <p class="image-caption">
+           Figure 3. Biopsy size optimization.
+          </p>
+         </div>
+        
+         <div class="research-image-container">
+          <img src="electrode-gap.png" width="420">
+          <p class="image-caption">
+           Figure 4. Electric field strength optimization.
+          </p>
+         </div>
+        </div>
+        <br><br>
+        
+        <div class="research-image-container">
+         <img src="shaking-speed.png" width="450">
+         <p class="image-caption">
+          Figure 5. Shaking speed optimization.
+         </p>
+        </div>
+        <br>
+        
+        <p class="popup-text">
+        Voltage, frequency, biopsy size, electric field strength, and shaking speed
+        each influenced tissue dissociation differently. Increasing electrical
+        stimulation generally improved dissociation until excessive conditions began to
+        damage tissue integrity. Through iterative optimization, a reproducible
+        combination of parameters was identified that consistently generated efficient
+        single-cell dissociation while minimizing unnecessary tissue disruption.
+        </p>
+        <br><br>
+
+       <!-- FINAL OPTIMIZED PROTOCOL -->
+         <h3 class="popup-section-title">
+          Final Optimized Protocol
+         </h3>
+         
+         <p class="popup-text">
+         The optimized protocol combined the best-performing parameter from each
+         experimental series to establish a standardized workflow for electrical tissue
+         dissociation before enzymatic digestion.
+         </p>
+         <br>
+         
+         <table class="analysis-table">
+         <tr>
+          <th>Parameter</th>
+          <th>Optimized Value</th>
+          <th>Purpose</th>
+         </tr>
+         
+         <tr>
+          <td><strong>Voltage</strong></td>
+          <td>4 Vpp</td>
+          <td>Provided sufficient electrical stimulation while minimizing tissue damage.</td>
+         </tr>
+         
+         <tr>
+          <td><strong>Frequency</strong></td>
+          <td>4 kHz</td>
+          <td>Produced consistent electrical exposure across samples.</td>
+         </tr>
+         
+         <tr>
+          <td><strong>Biopsy Size</strong></td>
+          <td>1 mm</td>
+          <td>Improved reproducibility and electrical field penetration.
+          </td>
+         </tr>
+         
+         <tr>
+          <td><strong>Electrode Gap</strong></td>
+          <td>2 mm</td>
+          <td>Generated the optimal electric field strength for dissociation.</td>
+         </tr>
+          
+         <tr>
+          <td><strong>Shaking Speed</strong></td>
+          <td>2.5</td>
+          <td>Enhanced mechanical separation following electrical stimulation.</td>
+         </tr>
+         </table>
+         <br>
+         
+         <div class="research-image-container">
+          <img src="optimized-protocol-workflow.png" width="700">
+          <p class="image-caption">
+           Final optimized electrical dissociation workflow.
+          </p>
+         </div>
+         <br>
+         
+         <p class="popup-text">
+         The optimized conditions served as the final protocol used for subsequent
+         three-dimensional spheroid experiments and established a reproducible workflow
+         that can be adapted for future tissue dissociation studies.
+         </p>
+         <br><br>
+
+       <!-- FUTURE APPLICATIONS -->
+         <h3 class="popup-section-title">
+          Future Applications
+         </h3>
+         
+         <p class="popup-text">
+         Although this study focused on optimizing dissociation conditions using beef
+         liver tissue, the resulting protocol provides a foundation for broader
+         applications in tissue engineering and translational biomedical research.
+         Future work will evaluate how this electrical-assisted approach performs in
+         three-dimensional cancer spheroids and additional tissue models while comparing
+         cell recovery, viability, and downstream molecular analyses with conventional
+         enzymatic dissociation methods.
+         </p>
+         
+         <ul class="popup-list">
+         <li>
+         Apply the optimized protocol to three-dimensional HepG2 tumor spheroids.
+         </li>
+         
+         <li>
+         Compare electrical-assisted dissociation with traditional enzymatic digestion.
+         </li>
+         
+         <li>
+         Evaluate single-cell recovery and cell viability.
+         </li>
+         
+         <li>
+         Investigate compatibility with single-cell RNA sequencing workflows.
+         </li>
+         
+         <li>
+         Expand optimization to additional tissue and organoid models.
+         </li>
+         
+         <li>
+         Support future translational applications in regenerative medicine and cancer research.
+         </li>
+         </ul>
+         <br><br>
+
+      <!-- SKILLS -->
+       <h3 class="popup-section-title">
+        Skills & Technologies
+       </h3>
+       
+       <div class="skills-container">
+       <button class="btn outline-btn skill-btn">
+       Electrical Tissue Dissociation
+       </button>
+       
+       <button class="btn outline-btn skill-btn">
+       3D Cell Culture
+       </button>
+       
+       <button class="btn outline-btn skill-btn">
+       Experimental Design
+       </button>
+       
+       <button class="btn outline-btn skill-btn">
+       
+       Protocol Optimization
+       
+       </button>
+       
+       <button class="btn outline-btn skill-btn">
+       Biomedical Engineering
+       </button>
+       
+       <button class="btn outline-btn skill-btn">
+       Data Analysis
+       </button>
+       
+       <button class="btn outline-btn skill-btn">
+       Scientific Visualization
+       </button>
+       
+       <button class="btn outline-btn skill-btn">
+       Research Documentation
+       </button>
+       
+       <button class="btn outline-btn skill-btn">
+       Translational Research
+       </button>
+       
+       <button class="btn outline-btn skill-btn">
+       Laboratory Research
+       </button>
+       </div>
+       <br><br>
+       
+       <div class="modal-footer">
+       <a href="BMES_Poster.pdf" target="_blank" class="report-link">
+        View Full Research Poster →
+       </a>
+       </div>
+
         <!-- Circulating Tumor Cell Imaging -->
         <div class="card-link" onclick="openModal('ctcModal')">
           <div class="card">
@@ -967,26 +1285,6 @@
           <br><br>
          </div>
        </div>
-       
-       <!-- 3D Tumor Modeling -->
-
-        <a href="3dtumormodeling.html" class="card-link">
-
-          <div class="card">
-
-            <h3>
-              3D Tumor Modeling
-            </h3>
-
-            <p>
-              Development and optimization of 3D spheroid cell culture systems to study tissue dissociation, cellular environments, and translational cancer applications.
-            </p>
-
-          </div>
-
-        </a>
-
-      </div>
 
     </div>
 
