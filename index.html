@@ -89,6 +89,12 @@
     .about-column strong {
       font-size: 26px;
     }
+
+    .education-column {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
    
     /* GENERAL SECTIONS */
 
@@ -630,15 +636,28 @@
         </p>
 
 <div class="about-columns">
-    
-    <div class="about-column">
+
+      <!-- LEFT SIDE -->
+    <div class="education-column">
+        <section class="education">
         <strong>Education</strong><br>
         Brown University — Anticipated Graduation May 2028<br>
         B.S. Biomedical Engineering<br>
         Certificate in Data Fluency
-      </div>
+        </section>
 
-        <div class="about-column">
+        <section class="coursework">
+          <strong>Relevant Coursework</strong><br><br>
+          Fluid Mechanics<br>
+          Thermodynamics<br>
+          Circuits and Signals<br>
+          Engineering Design<br>
+          Viral 
+         </section>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <section class="campus-involvement">
           <strong>Campus Involvement</strong><br><br>
           Society of Biomedical Engineers at Brown (BMES)<br>
           National Society of Black Engineers (NSBE)<br>
@@ -648,15 +667,7 @@
           Secretary of African Students Association<br>
           Triple Helix Research Journal<br>
           Vice President of PR & Marketing of Alpha Chi Omega
-        </div>
-
-        <div class="about-column">
-          <strong>Relevant Coursework</strong><br><br>
-          Fluid Mechanics<br>
-          Thermodynamics<br>
-          Circuits and Signals<br>
-          Engineering Design<br>
-          Viral Epidemics
+         </section>
         </div>
 
     </div>
